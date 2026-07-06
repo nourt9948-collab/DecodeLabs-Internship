@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs - Form Design & Validation</title>
+    <link rel="stylesheet" href="Project4.css">
+</head>
+<body>
+
+    <nav class="top-navbar">
+        <div class="nav-logo">DecodeLabs</div>
+        <div class="nav-title">
+            <h2>Project 4: Form Design & Validation</h2>
+            <p class="subtitle">Engineering the Architecture of Trust</p>
+        </div>
+    </nav>
+
+    <!-- الـ Form بعد تنظيفه ونقل العنوان منه -->
+    <main class="form-container">
+        <form id="registrationForm" novalidate>
+            
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="name@domain.com"
+                    aria-invalid="false"
+                    aria-describedby="email-error"
+                >
+                <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Strict Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required 
+                    placeholder="••••••••"
+                    aria-invalid="false"
+                    aria-describedby="password-error"
+                >
+                <span id="password-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Payload</button>
+        </form>
+
+        <div id="successBox" class="success-box" style="display: none;">
+            <h3>✓ Package Approved</h3>
+            <p>Data successfully packed into JSON payload:</p>
+            <pre id="jsonPayload"></pre>
+        </div>
+    </main>
+
+    <script src="Project4.js"></script>
+</body>
+</html>
