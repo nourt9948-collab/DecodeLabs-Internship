@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs - Interactive Web Elements</title>
+    <link rel="stylesheet" href="project3.css">
+	<script src="project3.js" defer></script>
+</head>
+<body>
+<div class="navbar">
+    
+    <nav>
+        <ul class="nav-links">
+            <header class="header-unit">
+        <button class="btn-secondary js-theme-toggle" aria-label="Toggle Dark Mode">
+            🌙 Toggle Theme
+        </button>
+    </header>
+        </ul>
+    </nav>
+</div>
+    <!-- dark mode button (Case Study) -->
+   
+
+    <main class="content-container">
+        <!-- (DOM Mutation / State Management) -->
+        <section class="content-block">
+            <h2>Interactive Logic Actuator</h2>
+            <p class="description">Every click triggers the Input-Process-Output loop.</p>
+            
+            <div class="counter-card">
+                <span class="score-display js-score-display">0</span>
+                <button class="btn-primary js-increment-btn">Click Me to Increment</button>
+            </div>
+        </section>
+
+        <!-- Menu (Dynamic Classes / Decoupling) -->
+        <section class="content-block">
+            <h2>Decoupled Visual States</h2>
+            <button class="btn-primary js-menu-toggle">Toggle Component Menu</button>
+            
+            <div class="dropdown-menu js-dropdown-menu">
+                <p>💡 Interactive Content Loaded Safely!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <p> <b>Powered by DecodeLabs &copy; 2026 | Batch 2026</b></p>
+    </footer>
+
+</body>
+</html>
